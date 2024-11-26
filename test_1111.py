@@ -26,7 +26,7 @@ def login(page):
         page.get_by_label("Login").fill("admin")
     with allure.step("Заполнение поля Password"):
         page.get_by_label("Password").click()
-        page.get_by_label("Password").fill("J7BYXWzGC1rQ6emBQXhe")
+        page.get_by_label("Password").fill("1")
     with allure.step("Нажатие Log in"):
         page.get_by_role("button", name="Log in").click()
 

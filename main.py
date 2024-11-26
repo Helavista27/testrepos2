@@ -2,6 +2,8 @@ import re
 from playwright.sync_api import Playwright, sync_playwright, expect
 import time
 
+print("START")
+
 def run(playwright: Playwright) -> None:
     browser = playwright.chromium.launch(headless=True)
     context = browser.new_context()

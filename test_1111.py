@@ -8,7 +8,7 @@ from xml.etree import ElementTree as ET
 @pytest.fixture(scope="module")
 def browser_context(playwright: Playwright):
     """Фикстура для запуска браузера и открытия страницы."""
-    browser = playwright.chromium.launch(headless=True, slow_mo=300)
+    browser = playwright.chromium.launch(headless=False, slow_mo=300)
     context = browser.new_context(
         viewport={"width": 1920, "height": 1080},
         ignore_https_errors=True
